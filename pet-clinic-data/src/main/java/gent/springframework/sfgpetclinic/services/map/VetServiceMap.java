@@ -5,11 +5,11 @@
 package gent.springframework.sfgpetclinic.services.map;
 
 import gent.springframework.sfgpetclinic.model.Vet;
-import gent.springframework.sfgpetclinic.services.CrudService;
+import gent.springframework.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet ,Long> implements CrudService<Vet ,Long> {
+public class VetServiceMap extends AbstractMapService<Vet ,Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -34,5 +34,10 @@ public class VetServiceMap extends AbstractMapService<Vet ,Long> implements Crud
     @Override
     public void deleteById(Long id) {
         super.deleteByID(id);
+    }
+
+    @Override
+    public Vet findByLastName(String lastName) {
+        return null;
     }
 }
