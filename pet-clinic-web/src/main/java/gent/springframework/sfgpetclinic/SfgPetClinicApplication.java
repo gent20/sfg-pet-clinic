@@ -1,4 +1,8 @@
-package gent.springframework.sfgpetclinic.sfgpetclinic;
+/*
+ * Created by Gent Kastrati
+ */
+
+package gent.springframework.sfgpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

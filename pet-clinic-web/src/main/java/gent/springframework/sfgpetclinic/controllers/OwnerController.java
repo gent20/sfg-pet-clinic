@@ -2,7 +2,11 @@
  * Created by Gent Kastrati
  */
 
-package gent.springframework.sfgpetclinic.sfgpetclinic.controllers;
+/*
+ * Created by Gent Kastrati
+ */
+
+package gent.springframework.sfgpetclinic.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
