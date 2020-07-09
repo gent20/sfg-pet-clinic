@@ -82,15 +82,14 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
+                <artifactId>maven-release-plugin</artifactId>
                 <configuration>
-                    <goal>install</goal>
+                    <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
     <scm>
         <developerConnection>scm:git:https://github.com/gent20/sfg-pet-clinic.git</developerConnection>
       <tag>sfg-pet-clinic-0.0.2</tag>

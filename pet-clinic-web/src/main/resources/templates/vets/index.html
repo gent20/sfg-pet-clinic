@@ -3,13 +3,30 @@
   -->
 
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>List of Vets</title>
 </head>
 <body>
+<!--/*@thymesVar id="vet" type="gent.springframework.sfgpetclinic.model.Vet"*/-->
 <h1 th:text="'Lists of Vets'">List of Vets..</h1>
 
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vet : ${vets}">
+        <td th:text="${vet.id}">1</td>
+        <td th:text="${vet.firstName}">Gent</td>
+        <td th:text="${vet.lastName}">Kastrati</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
