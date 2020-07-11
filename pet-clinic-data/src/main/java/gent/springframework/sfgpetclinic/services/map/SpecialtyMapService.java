@@ -5,13 +5,13 @@
 package gent.springframework.sfgpetclinic.services.map;
 
 import gent.springframework.sfgpetclinic.model.Specialty;
-import gent.springframework.sfgpetclinic.services.SpecialtiesService;
+import gent.springframework.sfgpetclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialtyMapService extends AbstractMapService<Specialty ,Long> implements SpecialtiesService {
+public class SpecialtyMapService extends AbstractMapService<Specialty ,Long> implements SpecialtyService {
 
     @Override
     public Set<Specialty> findAll() {
@@ -30,12 +30,12 @@ public class SpecialtyMapService extends AbstractMapService<Specialty ,Long> imp
 
     @Override
     public void delete(Specialty object) {
-        return super.delete(object);
+        super.delete(object);
     }
 
     @Override
     public void deleteById(Long id) {
-        return super.deleteByID(id);
+        super.deleteByID(id);
     }
 
 }
