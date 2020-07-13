@@ -20,4 +20,9 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping("/oups")
+    public String oupss(){
+        return "notimplemented";
+    }
+
 }
