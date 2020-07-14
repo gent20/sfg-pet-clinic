@@ -32,6 +32,11 @@ public class VetSDJpaService implements VetService {
     }
 
     @Override
+    public Vet findByLastName(String lastName) {
+        return vetRepository.findByLastName(lastName);
+    }
+
+    @Override
     public Vet findById(Long aLong) {
         return vetRepository.findById(aLong).orElse(null);
     }
