@@ -6,9 +6,11 @@ package gent.springframework.sfgpetclinic.services.map;
 
 import gent.springframework.sfgpetclinic.model.Visit;
 import gent.springframework.sfgpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit,Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
@@ -37,6 +39,6 @@ public class VisitMapService extends AbstractMapService<Visit,Long> implements V
 
     @Override
     public void deleteById(Long aLong) {
-        super.findById(aLong)
+        super.findById(aLong);
     }
 }
