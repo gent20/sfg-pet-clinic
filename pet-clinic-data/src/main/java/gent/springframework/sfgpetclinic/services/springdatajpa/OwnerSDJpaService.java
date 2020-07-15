@@ -4,10 +4,10 @@
 
 package gent.springframework.sfgpetclinic.services.springdatajpa;
 
-import gent.springframework.repositories.OwnerRepository;
-import gent.springframework.repositories.PetRepository;
-import gent.springframework.repositories.PetTypeRepository;
 import gent.springframework.sfgpetclinic.model.Owner;
+import gent.springframework.sfgpetclinic.repositories.OwnerRepository;
+import gent.springframework.sfgpetclinic.repositories.PetRepository;
+import gent.springframework.sfgpetclinic.repositories.PetTypeRepository;
 import gent.springframework.sfgpetclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

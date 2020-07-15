@@ -2,7 +2,7 @@
  * Created by Gent Kastrati
  */
 
-package gent.springframework.repositories;
+package gent.springframework.sfgpetclinic.repositories;
 
 import gent.springframework.sfgpetclinic.model.Owner;
 import org.springframework.data.repository.CrudRepository;

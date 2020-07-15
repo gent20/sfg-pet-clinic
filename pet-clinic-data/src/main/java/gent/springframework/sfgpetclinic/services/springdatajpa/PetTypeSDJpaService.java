@@ -4,8 +4,8 @@
 
 package gent.springframework.sfgpetclinic.services.springdatajpa;
 
-import gent.springframework.repositories.PetTypeRepository;
 import gent.springframework.sfgpetclinic.model.PetType;
+import gent.springframework.sfgpetclinic.repositories.PetTypeRepository;
 import gent.springframework.sfgpetclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
