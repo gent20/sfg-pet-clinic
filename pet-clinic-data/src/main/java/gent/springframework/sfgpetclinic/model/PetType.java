@@ -18,6 +18,6 @@ import javax.persistence.Table;
 public class PetType extends BaseEntity{
 
     @Column(name = "pet_name")
-    private String petName;22
+    private String petName;
 
 }
