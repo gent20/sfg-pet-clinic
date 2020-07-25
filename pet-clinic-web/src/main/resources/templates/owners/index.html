@@ -22,9 +22,9 @@
     </thead>
     <tbody>
     <tr th:each="owner : ${owners}">
-        <td th:text="${owner?.id}">1</td>
-        <td th:text="${owner?.firstName}">Gent</td>
-        <td th:text="${owner?.lastName}">Kastrati</td>
+        <td th:text="${owner.id}">1</td>
+        <td th:text="${owner.firstName}">Gent</td>
+        <td th:text="${owner.lastName}">Kastrati</td>
     </tr>
     </tbody>
 </table>
