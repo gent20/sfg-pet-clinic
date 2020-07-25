@@ -58,11 +58,11 @@ public class DataLoader implements CommandLineRunner {
 
 
         PetType dog = new PetType();
-        dog.setPetName("dog");
+        dog.setName("dog");
         PetType savedDogType = petTypeService.save(dog);
 
         PetType cat = new PetType();
-        dog.setPetName("Cat");
+        dog.setName("Cat");
         PetType savedCatType = petTypeService.save(cat);
 
         Owner owner1 = new Owner();
